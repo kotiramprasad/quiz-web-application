@@ -1,0 +1,18 @@
+
+<html>
+<head>
+    <title>Quiz App - Question</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body align="center"><br><br><br><br><br>    <h1>Question:</h1>
+    <p style="font-size:30px;">{{ question.question }}</p>
+
+    <form action="/quiz" method="POST">
+        {% for choice in question.choices %}
+        <label for="choice" style="color:white"><input type="radio" name="choice" value="{{ choice }}" required> {{ choice }}</label><br>
+        {% endfor %}
+        <br>
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>

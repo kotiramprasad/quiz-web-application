@@ -1,0 +1,17 @@
+body{
+    background-image:url('./quiz2.jpg');
+    background-repeat: no-repeat;
+    -webkit-box-direction: normals;
+    background-size: 100% 100%;
+    height: 600px;
+    font: white;
+}
+h1{
+    color: white;
+}
+H2{
+    color: white;
+}
+P{
+    color: white;
+}
